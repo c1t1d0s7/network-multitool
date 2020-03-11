@@ -2,16 +2,14 @@ Network Multi Tools
 ===================
 
 ### Network Tools
-- curl, wget, iperf3
+- ip, ifconfig, route, netstat, ss, traceroute, tracepath, mtr
 - dig, nslookup
-- ip, ifconfig, route
 - ping, nmap, arp, arping
+- curl, wget, iperf3
 - awk, sed, grep, cut, diff, wc, find, vi
-- netstat, ss
-- gzip, cpio
+- gzip, cpis
 - tcpdump
 - telnet, ssh, scp, sftp, ftp, rsync client
-- traceroute, tracepath, mtr
 - netcat(nc), socat
 - mysql, mariadb, postresql client
 - git, jq
