@@ -34,6 +34,7 @@ jobs:
           tags: |
             type=schedule,pattern={{date 'YY.MM'}}
             type=sha,format=short
+            type=raw,value=latest
             # type=ref,event=branch
             # type=ref,event=pr
             # type=semver,pattern={{version}}
@@ -58,9 +59,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: |
-            ${{ steps.meta.outputs.tags }}
-            latest
+          tags: ${{ steps.meta.outputs.tags }}
           platforms: |
             linux/amd64
             linux/arm64
