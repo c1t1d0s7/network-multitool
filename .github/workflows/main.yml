@@ -30,8 +30,9 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            name/app
-            ghcr.io/username/app            
+            #name/app
+            #ghcr.io/username/app
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
             type=schedule,pattern={{date 'YY.MM'}}
             type=sha,format=short
